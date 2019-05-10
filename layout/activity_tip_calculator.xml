@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TipCalculatorActivity">
+
+
+    <TextView
+        android:id="@+id/CheckAmountView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="CheckAmount:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PartySizeView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:text="Party Size:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CheckAmountView" />
+
+    <TextView
+        android:id="@+id/TipSectionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="116dp"
+        android:text="Tip Per Person:"
+        app:layout_constraintBottom_toTopOf="@+id/TotalSectionView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fifteenPercentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:text="15%"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TipSectionTextView" />
+
+    <TextView
+        android:id="@+id/fifteenPercentTipValue"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/fifteenPercentTextView"
+        app:layout_constraintTop_toBottomOf="@+id/TipSectionTextView" />
+
+    <TextView
+        android:id="@+id/twentyPercentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:text="20%"
+        app:layout_constraintStart_toEndOf="@+id/fifteenPercentTipValue"
+        app:layout_constraintTop_toBottomOf="@+id/TipSectionTextView" />
+
+    <TextView
+        android:id="@+id/twentyPercentTipValue"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/twentyPercentTextView"
+        app:layout_constraintTop_toBottomOf="@+id/TipSectionTextView" />
+
+    <TextView
+        android:id="@+id/twentyfivePercentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:text="25%"
+        app:layout_constraintStart_toEndOf="@+id/twentyPercentTipValue"
+        app:layout_constraintTop_toBottomOf="@+id/TipSectionTextView" />
+
+    <TextView
+        android:id="@+id/twentyfivePercentTipValue"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/twentyfivePercentTextView"
+        app:layout_constraintTop_toBottomOf="@+id/TipSectionTextView" />
+
+    <TextView
+        android:id="@+id/TotalSectionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="216dp"
+        android:text="Total Per Person"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/totalFifteenPercentView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:text="15%"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TotalSectionView" />
+
+    <TextView
+        android:id="@+id/fifteenPercentTotalValue"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/totalFifteenPercentView"
+        app:layout_constraintTop_toBottomOf="@+id/TotalSectionView" />
+
+    <TextView
+        android:id="@+id/twentyPercentTotalView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:text="20%"
+        app:layout_constraintStart_toEndOf="@+id/fifteenPercentTotalValue"
+        app:layout_constraintTop_toBottomOf="@+id/TotalSectionView" />
+
+    <TextView
+        android:id="@+id/twentyPercentTotalValue"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/twentyPercentTotalView"
+        app:layout_constraintTop_toBottomOf="@+id/TotalSectionView" />
+
+    <TextView
+        android:id="@+id/twentyfivePercentTotalView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:text="25%"
+        app:layout_constraintStart_toEndOf="@+id/twentyPercentTotalValue"
+        app:layout_constraintTop_toBottomOf="@+id/TotalSectionView" />
+
+    <TextView
+        android:id="@+id/twentyfivePercentTotalValue"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/twentyfivePercentTotalView"
+        app:layout_constraintTop_toBottomOf="@+id/TotalSectionView" />
+
+    <EditText
+        android:id="@+id/partySizeValue"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/PartySizeView"
+        app:layout_constraintTop_toBottomOf="@+id/checkAmountValue" />
+
+    <Button
+        android:id="@+id/buttonCompute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Compute Tip"
+        app:layout_constraintBottom_toTopOf="@+id/TipSectionTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/partySizeValue" />
+
+    <EditText
+        android:id="@+id/checkAmountValue"
+        android:layout_width="168dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/CheckAmountView"
+        tools:layout_editor_absoluteY="6dp" />
+
+</android.support.constraint.ConstraintLayout>
